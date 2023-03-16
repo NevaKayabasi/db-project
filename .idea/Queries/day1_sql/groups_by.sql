@@ -14,11 +14,15 @@ WHERE job_id = 'AC_ACCOUNT';
 select job_id,avg(salary)
 from employees
 group by job_id;
+
+
 --get me job_ids where their avg salary is more than 5k
 select job_id,avg(salary),count(*),sum(salary)
 from employees
 group by job_id
 having avg(salary) >5000;
+
+
 --get me job_ids where their avg salary is more than 5k
 select job_id,avg(salary),count(*),sum(salary)
 from employees
