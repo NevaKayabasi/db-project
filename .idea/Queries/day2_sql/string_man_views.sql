@@ -40,9 +40,9 @@ order by "length_name" desc;
 --substr(colName,begIndex,NumberOfChar)
 select substr(first_name,0,1)||'.'||substr(last_name,0,1) as "initials"
 from employees;
+
 select substr(first_name,0,1)||'.'||substr(last_name,0,1) as "initials",
-       first_name||' '||last_name as "full_name",lower(email||'@gmail.com') as
-                                                             "full_email"
+              first_name||' '||last_name as "full_name",lower(email||'@gmail.com') as "full_email"
 from employees;
 
 
